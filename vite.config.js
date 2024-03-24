@@ -7,7 +7,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '~animate.css': 'animate.css/animate.css',
+      '~loaders.css': 'loaders.css',
     },
+    
   },
   server: {
     fs: {

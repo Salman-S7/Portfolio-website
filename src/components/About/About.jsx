@@ -4,6 +4,7 @@ import './about.css'
 
 import React, { useEffect, useState } from 'react'
 import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
 
     
 function About() {
@@ -15,6 +16,7 @@ function About() {
   },[])
 
   return (
+    <>
     <div className='container about-page'>
         <div className="text-zone">
             <h1>
@@ -63,6 +65,8 @@ function About() {
             </div>
         </div>
     </div>
+    <Loader type='pacman'/>
+    </>
   )
 }
 

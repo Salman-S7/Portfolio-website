@@ -4,6 +4,8 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import Logo from './Logo/Logo';
+import Loader from 'react-loaders';
+
 
 function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -18,6 +20,7 @@ function Home() {
 
 
   return (
+    <>
     <div className='container home-page'>
         <div className="text-zone">
             <h1>
@@ -46,6 +49,9 @@ function Home() {
         </div>
         <Logo></Logo>
     </div>
+    <Loader type='pacman'/>
+    
+    </>
   )
 }
 

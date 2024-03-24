@@ -1,4 +1,5 @@
 @import '~animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
 
 @font-face {
   font-family: 'Halvetica neue';
@@ -25,4 +26,47 @@ input,
 h1,
 textarea{
   font-family: 'Halvetica neue';
+}
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+.pacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid var(--primary-color);
+  border-left: 25px solid var(--primary-color);
+  border-bottom: 25px solid var(--primary-color);
+  border-radius: 25px;
+  animation: rotate_pacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.pacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid var(--primary-color);
+  border-left: 25px solid var(--primary-color);
+  border-bottom: 25px solid var(--primary-color);
+  border-radius: 25px;
+  animation: rotate_pacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.pacman> div:nth-child(3), .pacman> div:nth-child(4), .pacman> div:nth-child(5){
+  background-color: var(--primary-color);
+  /* width: 20px;
+  height: 20px; */
 }

@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import './sidebar.css'
 import Logos from '../../assets/images/logo-s.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
+// import LogoSubtitle from '../../assets/images/logo_sub.png';
 
 
 import React from 'react'
@@ -14,8 +14,8 @@ function Sidebar() {
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <img className='logo-img-1' src={Logos} alt='logo'></img>
-            <img className='logo-img-2' src={LogoSubtitle} alt='salman'></img>
-            {/* <h2>Salman</h2> */}
+            {/* <img className='logo-img-2' src={LogoSubtitle} alt='salman'></img> */}
+            <h2 className='logo-img-2'>Salman</h2>
         </Link>
         <nav>
             <NavLink exact="true" activeclassname="active" to='/'>
