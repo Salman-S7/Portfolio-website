@@ -1,12 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
 import './sidebar.css'
 import Logos from '../../assets/images/logo-s.png';
-// import LogoSubtitle from '../../assets/images/logo_sub.png';
-
-
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 function Sidebar() {
@@ -26,6 +23,9 @@ function Sidebar() {
             </NavLink>
             <NavLink exact="true" activeclassname="active" className='contact-link' to='/contact'>
                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'></FontAwesomeIcon>
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" className='my-work' to='/work'>
+                <FontAwesomeIcon icon={faLaptopCode} color='#4d4d4e'></FontAwesomeIcon>
             </NavLink>
         </nav>
         <ul className='social-links'>
