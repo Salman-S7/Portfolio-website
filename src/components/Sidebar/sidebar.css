@@ -184,10 +184,11 @@ nav a.active svg {
 @media screen and (max-width : 768px) {
     .nav-bar{
         position: fixed;
-        height: 81px;
+        height: 72px;
         width: 90%;
         bottom: 18px; 
-        top: 88vh;
+        left: 0;
+        top: 88svh;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -204,7 +205,7 @@ nav a.active svg {
         align-items: center;
     }
     nav a {
-        font-size: 34px;
+        font-size: 28px;
     }
     nav a::after{
         font-size: 10px;
