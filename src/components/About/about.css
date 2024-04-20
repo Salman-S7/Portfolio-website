@@ -4,7 +4,7 @@
     top: 0;
     padding-top: 18%;
     margin-left: 0;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     overflow: hidden;
 }
@@ -78,4 +78,12 @@
       transform: rotateX(90deg);
     }
   }
-  
+
+
+  @media screen and (max-width : 768px) {
+      .stage-cube-cont{
+        overflow: visible;
+        height: 100%;
+
+      }
+  }

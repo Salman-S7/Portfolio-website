@@ -36,7 +36,7 @@ function Contact() {
     },[])
 
   return (
-    <div>
+    <>
         <div className="container">
             <div className="text-zone">
                 <h1>
@@ -73,6 +73,8 @@ function Contact() {
                 </form>
             </div>
             </div>
+            
+            <div className="map-wrap">
             <div className="info-map">
                 Salman Shaikh
                 <br />
@@ -82,7 +84,6 @@ function Contact() {
                 <br />
                 <span>salmanshaikh3747@gmail.com</span>
             </div>
-            <div className="map-wrap">
                 <MapContainer center={[18.751778, 73.551399]} zoom={13}>
                     <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'/>
                     <Marker position={[18.751778, 73.551399]}>
@@ -92,7 +93,7 @@ function Contact() {
             </div>
         </div>
         <Loader type='pacman'/>
-    </div>
+    </>
   )
 }
 

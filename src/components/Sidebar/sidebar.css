@@ -1,11 +1,11 @@
 .nav-bar{
     background-color: #181818;
     width: 60px;
-    height: 100%;
+    
     position: absolute;
     top: 0;
     z-index: 3;
-    min-height: 101vh;
+    height: 101vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +79,8 @@ nav a:after {
     text-align: center;
     opacity: 0;
     transition: all 0.3s ease-out;
+    font-weight: 800;
+
 }
 
 nav a:first-child:after {
@@ -87,17 +89,21 @@ nav a:first-child:after {
 
 nav a.about-link:after {
     content: 'ABOUT';
+
 }
 
 nav a.contact-link:after {
     content: 'CONTACT';
+
 }
 
 nav a.portfolio-link:after {
     content: 'PORTFOLIO';
+
 }
 nav a.my-work:after {
     content: 'PROJECTS';
+    font-weight: 800;
 }
 
 nav a.active svg {
@@ -172,4 +178,40 @@ nav a.active svg {
 }
 .social-link-1:hover a svg, .social-link-2:hover a svg{
     color: #ffd700;
+}
+
+
+@media screen and (max-width : 768px) {
+    .nav-bar{
+        position: fixed;
+        height: 81px;
+        width: 90%;
+        bottom: 18px; 
+        top: 88vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 4%;
+        margin: 0 5%;
+        border-radius: 40px;
+    }
+    nav{
+        flex-direction: row;
+        margin-top: 0;
+        top: auto;
+        height: 64px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav a {
+        font-size: 34px;
+    }
+    nav a::after{
+        font-size: 10px;
+    }
+    .social-links{
+        flex-direction: row;
+        width: auto;
+        display: none;
+    }
 }

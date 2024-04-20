@@ -12,3 +12,11 @@ body{
   height: 100vh;
   overflow: hidden;
 }
+@media screen and (max-width : 768px) {
+  body{
+      overflow: auto;
+  }
+  .page{
+    position: relative;
+  }
+}

@@ -3,7 +3,7 @@
     width: 400px;
     height: 609px;
     opacity: 0;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     right: 15%;
     bottom: 0;
@@ -39,4 +39,9 @@
     stroke: #ffd700;
     stroke-width: 10;
   }
-  
+
+  @media screen and (max-width : 768px) {
+    .logo-container {
+      width: 60%;
+    }
+  }

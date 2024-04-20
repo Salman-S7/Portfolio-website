@@ -66,10 +66,10 @@
     color: #333;
 }
 .text-zone{
-    position:  absolute;
+    /* position:  absolute; */
     left: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     width: 40%;
     max-height: 90%;
 }
